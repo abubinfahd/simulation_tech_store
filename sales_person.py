@@ -24,14 +24,16 @@ class SalesPerson:
     def calculate_sales(self):
         total = 0
 
-        for product in products_sold:
+        for product in self.products_sold:
             total += product.price
 
         self.total_sales = total
+
         return total
 
     def calculate_commission(self, percentage):
-        return f'Commission: {total + percentage}'
+        total = self.calculate_sales
+        return f'Commission: {total * percentage}'
 
     def total_products_sold(self):
         return f'The number of product sold: {len(self.products_sold)}'
