@@ -14,7 +14,7 @@ class Tech:
         self.price = int(self.price - self.price * Tech.discount)
 
     def calcuilate_shipping_cost(self, rate):
-        return f"Shipping cost will be{self.weight * rate}"
+        return f"Shipping cost will be: {self.weight * rate}"
 
     @classmethod
     def get_total_products(cls):

@@ -32,7 +32,7 @@ class SalesPerson:
         return total
 
     def calculate_commission(self, percentage):
-        total = self.calculate_sales
+        total = self.calculate_sales()
         return f'Commission: {total * percentage}'
 
     def total_products_sold(self):
